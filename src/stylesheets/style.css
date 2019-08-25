@@ -1,0 +1,342 @@
+/*
+Theme Name: Cody Photo Site
+Theme URI: www.google.ca
+Author: Andrea Swartz
+Author URI: www.google.ca
+Description: Photography Website
+Text Domain: bsimple
+Version: 1.0.0
+License: GNU General Public License v2 or later
+*/
+
+/* iconcontainer.css */
+.icon-container {
+    width: 10rem;
+    height: 10rem;
+    padding-top: 2rem;
+    display: flex;
+    transform: rotate(0deg);
+  }
+  
+  .icon-container i {
+    color: #b7bcbb;
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(0deg);
+  }
+  
+  /* icontainer.css end */
+  
+  /*review.css begin*/
+  .review-carousel {
+      display: flex;
+      align-items: center;
+      width: 100%; 
+      height: 250px;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .review-carousel {
+        width: 100%;
+        height: 400px;
+      }
+    }
+  /*End review.css*/ 
+  /*Sectionheading.css begin*/
+  .section-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-heading h1 {
+    font-size: 3.5rem;
+    color: rgba(0,0,0);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .section-heading h1::before,
+  .section-heading h1::after {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 165, 000, 0.78);
+  }
+  
+  .section-heading h1::before {
+    width: 10rem;
+    height: 3px;
+    border-radius: .8rem;
+  }
+  
+  .section-heading h1::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    bottom: -1rem;
+  }
+  
+  .section-heading h6 {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  /*End sectionheading*/
+  /*backgroundreviews*/
+  body {
+    background-color: #ddd;
+  }
+  
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev{
+    display:block;
+  }
+  /*end backgroundreviews*/
+  
+  
+  /* did not put this in a proper file, Clips image down in size */
+  .image-clip {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: -150px;
+    margin-top: -150px;
+    height: 800px;
+  }
+  
+  /* Tablets */
+  @media screen and (min-width: 500px) and (max-width: 900px) {
+    .image-clip {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: -50px;
+      margin-top: -50px;
+      height: 650px;
+    }
+  }
+  /* Phones */
+  @media screen and (max-width: 500px) {
+    .image-clip {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: 100px;
+      margin-top: 150px;
+      height: 250px;
+    }
+    .section-heading h1{
+      font-size: 2rem;
+      padding: 1rem;
+    }
+    /*about me responsive*/
+    .about .container{
+      flex-direction: column;
+    }
+  }
+  /*clip-path: rect(0px,60px,200px,0px); */
+  
+  
+  
+  /* Copied from old site start */
+  
+  /*Start about*/
+  .about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-heading {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+  }
+  
+  .about-heading h1 {
+    font-size: 10rem;
+    opacity: .3;
+  }
+  
+  .about-heading h6 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .profile-img {
+    flex: 1;
+    margin-right: 5rem;
+  }
+  
+  .about-details {
+    flex: 1;
+  }
+  
+  
+  
+  
+  
+  /*End about*/
+  /*background animated gradient start*/
+  .animated {
+  background: linear-gradient(20deg, #ffa500, #f95d06);
+  background-size: 400% 400%;
+  
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+  }
+  @-webkit-keyframes AnimationName {
+      0%{background-position:52% 0%}
+      50%{background-position:49% 100%}
+      100%{background-position:52% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:52% 0%}
+      50%{background-position:49% 100%}
+      100%{background-position:52% 0%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:52% 0%}
+      50%{background-position:49% 100%}
+      100%{background-position:52% 0%}
+  }
+  /*end gradient animator*/
+  
+  /* Copied from old site end */
+  
+  
+  /* Social Media Icons Start */
+  
+  /* Social Media Icons End */
+  
+  
+  
+  .center {
+    display: table;
+    width: 100%;
+    height: 100px;
+  }
+  
+  #social h2 {
+    color: #fff;
+    font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #social {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 100px;
+  }
+  
+  #social ul {
+    text-align: center;
+    padding-left: 0px;
+  }
+  
+  #social li {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #social li:first-child {
+    margin-left: 0px;
+  }
+  
+  #social li:last-child {
+    margin-right: 0px;
+  }
+  
+  
+  .social-media {
+    margin-top: 5rem;
+  }
+  
+  .social-media i {
+    font-size: 5rem;
+    transition: color 650ms;
+  }
+  
+  .social-media li {
+    list-style-type: none;
+  }
+  
+  a.icon-link {
+    color: #878b8a;
+  }
+  
+  .fa-facebook-square:hover {
+    color: #4267b2;
+  }
+  
+  .fa-instagram:hover {
+    color: #ea4c89;
+  }
+  
+  .fa-mobile-alt:hover {
+    color: #ffe838;
+  }
+  
+  
+  
+  /* Flex Stuff */
+  /* Common Styles */
+  .content,
+  .content1,
+  .content2 {
+    color: #fff;
+    font: 100 24px/100px sans-serif;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content div,
+  .content1 div,
+  .content2 div {
+    height: 100%;
+    width: 100%;
+  }
+  .red {
+    background: orangered;
+  }
+  .green {
+    background: yellowgreen;
+  }
+  .blue {
+    background: steelblue;
+  }
+  
+  /* Flexbox Styles */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content1 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .content2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  
