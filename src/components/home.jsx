@@ -1,7 +1,6 @@
 import React from 'react';
 import InstagramEmbed from 'react-instagram-embed';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
+import Carousel from './pagecomponents/carousel';
 class Home extends React.Component {
   render() {
     var navBarStyle = {
@@ -11,10 +10,14 @@ class Home extends React.Component {
     let colorStripe = {
       'padding-bottom': '100px'
     }
-
+    
     let aboutCards = {
       'padding': '0px', 
       'background-color': '#ddd'
+    }
+
+    let abouth5Text = {
+      'text-align': 'center'
     }
 
     let abouth3Text = {
@@ -36,6 +39,14 @@ class Home extends React.Component {
       'padding': '-100px'
     }
 
+    let fonth6Style = {
+      'margin': '50px'
+    }
+
+    let formStyle = {
+      'text-align': 'left'
+    }
+
     return (
       <div>
         <nav class="navbar navbar-expand-lg navbar-dark shadow" style={navBarStyle}>
@@ -45,8 +56,6 @@ class Home extends React.Component {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <Link to='/'>Home</Link>
-              <Link to='/gallery'>Gallery</Link>
               <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="#">About</a>
               <a class="nav-item nav-link" href="#">About</a>
@@ -73,7 +82,7 @@ class Home extends React.Component {
 
     <div class="card">
       <div class="card-body">
-        <h5 class="display-4">Cody Mac Neil</h5>
+        <h5 class="display-4" style={abouth5Text}>Cody Mac Neil</h5>
         <hr />
         <p class="card-text">Born and raised in Windsor, I graduated top in my class in the Royal Airborne Photography Regiment. I have over 300 confirmed photography deployments and I have been involved in numerous secret operations to take photos of sensitive intel. I am trained in reconnaissance aircraft operation with over 1000 hours of flight time in the USAF SR-71 and over 20,000 images for real-time surveillance missions. I am the top pilot in the entire Canadian and American Airforce with multiple Medals of Honors. After meeting my soulmate I have retired and made my current mission the creation wedding experiences of a lifetime.</p>
       </div>
@@ -119,6 +128,7 @@ class Home extends React.Component {
       <p class="card-text">If you would like to see my full porfiolio of selected works, view my gallery!</p>
       <a href="#" class="btn btn-primary">View Full Gallery!</a>
     </div>
+    <Carousel />
     <InstagramEmbed
   url='https://www.instagram.com/p/B1gh_SgHm81/'
   maxWidth={320}
@@ -254,7 +264,7 @@ class Home extends React.Component {
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+      <a classeses="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
